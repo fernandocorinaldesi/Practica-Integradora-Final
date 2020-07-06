@@ -1,0 +1,44 @@
+.card-container {
+  background-color: white;
+  margin-left: 10px;
+ }
+
+.card {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10px 10px 10px 10px;
+  border: rgb(206, 204, 204) 1px solid;
+  -webkit-box-shadow: 10px 10px 23px -1px rgba(196, 196, 196, 1);
+  -moz-box-shadow: 10px 10px 23px -1px rgba(196, 196, 196, 1);
+  box-shadow: 10px 10px 23px -1px rgba(196, 196, 196, 1);
+}
+.titulo-header{
+  margin: 0 auto;
+  width: 90%;
+}
+.descripcion-container h5{
+  margin: 0 auto;
+  width: 90%;
+ 
+}
+.descripcion{
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 10px 10px 10px 10px;
+  border: rgb(202, 202, 202) 1px solid;
+  
+}
+.estado-container{
+  margin: 0 auto;
+  width: 90%;
+} 
+
+
+
+
+ 
+
+
+

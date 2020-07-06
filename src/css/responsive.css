@@ -1,0 +1,51 @@
+@media only screen and (max-height: 800px) {
+  .lista-container{
+    height: 300px;
+  }
+  .tutorial-content {
+    margin-top: 0;
+  }
+  .btn{
+    font-size: 12px !important;
+  }
+   footer{
+   height: 8%;
+  }
+  body{
+    overflow: auto;
+  }
+  #about-container{
+    margin-bottom: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 450px){
+  body{
+    font-size: 12px !important;
+  }
+  .card {
+    width: 90%;
+    
+  }
+  .btn{
+    font-size: 12px !important;
+  }
+  .lista-container {
+    height: 100px;
+    width: 100%;
+  }
+  .seccion-container {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .tutorial-content {
+    margin-top: 2%;
+  }
+  .tituloabout{
+   font-size: 14px;
+  }
+  h6{
+    font-size: 12px;
+  }
+}
