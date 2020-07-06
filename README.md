@@ -8,6 +8,7 @@
   - [Dependencias](#Dependencias)
   - [Solución](#Solución)
   - [Deploy](#Deploy)
+  - [Video](#Video)
   - [Uso](#Uso)
   - [Contacto](#Contacto)
   - [Licencia](#Licencia)
@@ -72,6 +73,9 @@ Estructura del front :
 ![screenshoot](https://i.ibb.co/0hn6vhK/front.jpg)
 ### Deploy  
 [https://react-front-api.herokuapp.com/](https://react-front-api.herokuapp.com/
+
+### Video  
+[https://youtu.be/qG72UfimJMs](https://youtu.be/qG72UfimJMs)
 
 ### Uso  
 
