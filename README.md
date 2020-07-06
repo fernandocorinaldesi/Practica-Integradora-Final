@@ -57,17 +57,18 @@ Funciones disponibles front en react :
  
 
 ### Solución   
-Habiendo consultado diferentes fuentes y documentos, y teniendo en cuenta el diseño presentado en clase, se propone una solución utilizando el siguiente diseño en capas:
-![screenshoot](https://i.ibb.co/YfbcRxQ/Express-REST-API-Struc.png)
+
+![screenshoot](https://i.ibb.co/6t42ZXn/tpdise-o.jpg)
 
 Main layer     | Type   | Descripcion
---------------------- | -------------------- | ---------------------
+--------------------- | -------------------- | ---------------------  
+View layer | Front ui/ux | Esta es la capa de la vista, fue realizada con react.js utilizando componentes reutilizables y estados
 HTTP logic layer | Routes + Controllers | Esta capa manejara las peticiones http y las routeara a su correspondiente controllador
 Business logic layer | Services + Data Access | Contiene la logica de negocio asi como el acceso a nuestra base de datos, esta fue simplicada un poco teniendo en cuenta el tamaño de la api y el hecho de no usar un orm junto  con un modelo  
 
 
-Estructura :  
-![screenshoot](https://i.ibb.co/yy43Hm0/estructura.jpg)
+Estructura del front :  
+![screenshoot](https://i.ibb.co/0hn6vhK/front.jpg)
 ### Deploy  
 [https://react-front-api.herokuapp.com/](https://react-front-api.herokuapp.com/
 
