@@ -1,68 +1,95 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="http://www.unpaz.edu.ar"><img src="https://www.unpaz.edu.ar/sites/default/files/unpaz_0.png" title="FVCproductions" alt="UNPAZ"></a>
 
-## Available Scripts
+# Empezando con Trabajo Practico Integrador
 
-In the project directory, you can run:
+## Tabla de contenidos
+- [Empezando](#Empezando)
+  - [Requerimientos](#Requerimientos)
+  - [Dependencias](#Dependencias)
+  - [Solución](#Solución)
+  - [Deploy](#Deploy)
+  - [Uso](#Uso)
+  - [Contacto](#Contacto)
+  - [Licencia](#Licencia)
+ 
 
-### `npm start`
+### Empezando
+El presente trabajo práctico de la cursada Práctica Integradora correspondiente a la carrera Analista Programador Universitario de la Universidad Nacional de José se Paz tiene por objetivo crear 2 aplicaciones web que trabajen en conjunto para poder simular el registro de todos los tutoriales que la Universidad pública.
+La primera aplicación será una API sobre los tutoriales a través de la cual se podrán realizar las operaciones básicas de registración, actualización, borrado y consulta de los tutoriales.
+La segunda aplicación será la interface de usuario que permitirá navegar por las distintas opciones de la página web para realizar las operaciones a través de una interface amigable y fácil de usar. Esta aplicación deberá realizar las distintas operaciones por medio de la API.  
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Para el desarrollo de la api se define el objeto tutorial con los siguientes atributos: 
+{
 
-### `npm test`
+        "id": 3,
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        "Titulo": "Programción 1",
 
-### `npm run build`
+        "Descripcion": "Aprender a Programar",
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+        "publicado": true,
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+}
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Funciones disponibles api:
+* Operaciones crud
+Repositorio de la api : [https://github.com/fernandocorinaldesi/segundo-parcial-api](https://github.com/fernandocorinaldesi/segundo-parcial-api)  
 
-### `npm run eject`
+Funciones disponibles front en react :
+* Operaciones crud
+* Busqueda dinamica en el front
+* Función experimental copia de seguridad en csv de la Base de datos
+* Función experimental exportacion hacia la api de la base de datos en csv
+ 
+### Requerimientos 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ - Nodejs  (v7 o superior) instalado
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Dependencias 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ - react-bootstrap
+ - react-papaparse
+ - @material-ui/core
+ - @material-ui/icons
+ - react-csv
+ - react-fade-in
+ 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Solución   
+Habiendo consultado diferentes fuentes y documentos, y teniendo en cuenta el diseño presentado en clase, se propone una solución utilizando el siguiente diseño en capas:
+![screenshoot](https://i.ibb.co/YfbcRxQ/Express-REST-API-Struc.png)
 
-## Learn More
+Main layer     | Type   | Descripcion
+--------------------- | -------------------- | ---------------------
+HTTP logic layer | Routes + Controllers | Esta capa manejara las peticiones http y las routeara a su correspondiente controllador
+Business logic layer | Services + Data Access | Contiene la logica de negocio asi como el acceso a nuestra base de datos, esta fue simplicada un poco teniendo en cuenta el tamaño de la api y el hecho de no usar un orm junto  con un modelo  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Estructura :  
+![screenshoot](https://i.ibb.co/yy43Hm0/estructura.jpg)
+### Deploy  
+[https://react-front-api.herokuapp.com/](https://react-front-api.herokuapp.com/
 
-### Code Splitting
+### Uso  
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Instalacion de dependencias :  
 
-### Analyzing the Bundle Size
+`npm install`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Para su ejecucion en el directorio del proyecto ejecutar :  
 
-### Making a Progressive Web App
+`npm start`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Contacto
 
-### Advanced Configuration
+Puedes enviar un mail a alguna de las siguientes direcciones : 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- fcorinaldesi@unpaz.edu.ar
+- fernandocorinaldesi@hotmail.com
 
-### Deployment
+### Licencia
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
