@@ -33,7 +33,8 @@ Para el desarrollo de la api se define el objeto tutorial con los siguientes atr
 }
 
 Funciones disponibles api:
-* Operaciones crud
+* Operaciones crud  
+
 Repositorio de la api : [https://github.com/fernandocorinaldesi/segundo-parcial-api](https://github.com/fernandocorinaldesi/segundo-parcial-api)  
 
 Funciones disponibles front en react :
