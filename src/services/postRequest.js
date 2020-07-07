@@ -11,9 +11,10 @@ export const postAPI = async (data) => {
     };
     const respuesta = await fetch(LOCAL_URL, options);
     if (respuesta.status === 409) {
-      alert("El tutorial ya existe");
+       alert("El tutorial ya existe");
+       return "El tutorial ya existe";
     } else {
-      return respuesta;
+      return "Se creo un nuevo tutorial";
     }
   } catch (error) {
     throw error;
