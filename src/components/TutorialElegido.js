@@ -16,8 +16,8 @@ export default function TutorialElegido(props) {
     if (e.publicado) publicado = "publicado";
     else publicado = "pendiente";
     return (
-      <div className="card-container">
-        <div className="card" key={e.id}>
+      <div className="card-container" key={e.id}>
+        <div className="card" >
           <Form onSubmit={handleSubmitEdit}>
             <fieldset disabled={e.edicion}>
               <Form.Group className="mr-4 ml-4 mt-2">
