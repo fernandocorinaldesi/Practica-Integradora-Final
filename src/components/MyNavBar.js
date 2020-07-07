@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
-import { Nav, NavDropdown } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import logo from "../logo.svg";
 import "../css/MyNavBar.css";
 import { Link } from "react-router-dom";
@@ -35,8 +35,8 @@ export default function MyNavBar() {
               <a href="https://www.facebook.com/fernando.corinaldesi/" className="facebook">
                 <i className="fa fa-facebook"></i>
               </a>
-              <a href="https://www.instagram.com/?hl=es-la" className="instagram">
-                <i className="fa fa-instagram"></i>
+              <a href="https://github.com/fernandocorinaldesi/Practica-Integradora-Final" className="instagram">
+                <i className="fa fa-github"></i>
               </a>
               <a href="https://aboutme.google.com/u/0/" className="google-plus">
                 <i className="fa fa-google-plus"></i>
