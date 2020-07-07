@@ -38,6 +38,7 @@ export default class SeccionTutorial extends Component {
     type: "",
     msg: "",
   };
+  
   componentDidMount() {
     this.get();
   }
@@ -56,7 +57,7 @@ export default class SeccionTutorial extends Component {
     try {
       const res = await postAPI(data);
       this.clearHistory()
-      this.setState({ res: res, opensnack: true, msg: "Se creo un nuevo tutorial", type: "success", disable: true });
+      this.setState({ res: res, opensnack: true, msg: res, type: "success", disable: true });
     } catch (error) {
       this.clearHistory()
       alert(error);
@@ -179,15 +180,16 @@ export default class SeccionTutorial extends Component {
     let currentList = [];
     let newList = [];
     if (e.target.value !== "") {
-      currentList = this.state.data;
+      currentList = this.state.original;
       newList = currentList.filter((item) => {
         const lowercase = item.titulo.toString().toLowerCase();
         const filter = e.target.value.toString().toLowerCase();
-        return lowercase.includes(filter);
+         return lowercase.includes(filter);
       });
     } else {
       newList = this.state.original;
     }
+    //newList.map(e=>alert(e.titulo));
     this.setState({
       data: newList,
     });
